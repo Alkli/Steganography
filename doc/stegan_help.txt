@@ -1,0 +1,22 @@
+Данная программа скрывает содержимое произвольного файла в bmp-файле 24-битного формата. 
+Для записи требуется файл с данными и изображение в формате .bmp
+Максимальный размер определяется по формуле:
+file_size_data = (file_size_case-118- strlen(name_file_data)*8)/8;
+где file_size_data - максимальный размер файла с данными, 
+    file_size_case - размер файла .bmp, 
+    strlen(name_file_data) - длина имени файла с данными
+
+Программа использует слудеющие обозначения:
+Для записи:
+name_file_message - имя файла с данными
+name_file_case - имя .bmp-файла без спрятанных данных
+name_file_result - имя выходного файла, в котором скрыты данные
+команда для записи: steganography.exe writing name_file_message name_file_case name_file_result
+
+Для чтения:
+name_file - имя .bmp-файла содержащего скрытые данные 
+команда для чтения: steganography.exe readign name_file
+
+команда для вызова справки: steganography.exe help
+
+
