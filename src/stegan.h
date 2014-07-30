@@ -2,6 +2,18 @@
  #ifndef H_STEGAN
  #define H_STEGAN
 
+#include <io.h>
+#include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include <iostream>
+#include <string>
+
+#include "Windows.h"
+
+ 
 void writing();
 void write_int(int size, FILE *file_case, FILE *file_result); 
 void write_string(char *str, FILE *file_case, FILE *file_result);
