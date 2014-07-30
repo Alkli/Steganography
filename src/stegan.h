@@ -1,5 +1,6 @@
 
-
+ #ifndef H_STEGAN
+ #define H_STEGAN
 
 void writing();
 void write_int(int size, FILE *file_case, FILE *file_result); 
@@ -23,3 +24,5 @@ void check_size_of_files_writing(FILE *file_case, FILE *file_message, char *name
 void copy_headers(FILE *file_case, FILE *file_result);
 void check_size_of_files_reading(FILE *file_case, int size);
 void check_length_name_file(char *name_file);
+
+ #endif
